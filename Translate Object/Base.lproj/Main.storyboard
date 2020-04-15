@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Translate_Object" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view alpha="0.65000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j81-Sa-dwP" userLabel="Below View">
+                                <rect key="frame" x="0.0" y="500" width="375" height="167"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Accuracy: 0%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6kA-v9-Y25" userLabel="Accuracy">
+                                        <rect key="frame" x="8" y="8" width="69" height="12"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="12" id="oSN-SX-mFB"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="10"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Object Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="57m-Hr-eRN" userLabel="Object Name">
+                                        <rect key="frame" x="6" y="8" width="360" height="49"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="49" id="mWb-ER-qOv"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <pickerView multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X6i-JM-lVC" userLabel="Language Picker">
+                                        <rect key="frame" x="0.0" y="62" width="375" height="44"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    </pickerView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Translation" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KL9-Rf-m0k" userLabel="Translated Text">
+                                        <rect key="frame" x="8" y="108" width="359" height="51"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="6kA-v9-Y25" firstAttribute="top" secondItem="j81-Sa-dwP" secondAttribute="topMargin" id="4iC-I0-Pma"/>
+                                    <constraint firstItem="KL9-Rf-m0k" firstAttribute="leading" secondItem="6kA-v9-Y25" secondAttribute="leading" id="Aoc-OH-wUC"/>
+                                    <constraint firstItem="KL9-Rf-m0k" firstAttribute="centerX" secondItem="X6i-JM-lVC" secondAttribute="centerX" id="D6T-Q6-7MJ"/>
+                                    <constraint firstItem="6kA-v9-Y25" firstAttribute="leading" secondItem="j81-Sa-dwP" secondAttribute="leadingMargin" id="HY5-Y3-d0L"/>
+                                    <constraint firstItem="KL9-Rf-m0k" firstAttribute="top" secondItem="X6i-JM-lVC" secondAttribute="bottom" constant="2" id="PW4-hm-8Og"/>
+                                    <constraint firstItem="X6i-JM-lVC" firstAttribute="leading" secondItem="j81-Sa-dwP" secondAttribute="leading" id="Rry-Xn-rJk"/>
+                                    <constraint firstItem="KL9-Rf-m0k" firstAttribute="bottom" secondItem="j81-Sa-dwP" secondAttribute="bottomMargin" id="X97-hY-FN1"/>
+                                    <constraint firstItem="57m-Hr-eRN" firstAttribute="top" secondItem="6kA-v9-Y25" secondAttribute="bottom" constant="-12" id="buC-If-9lT"/>
+                                    <constraint firstAttribute="trailing" secondItem="X6i-JM-lVC" secondAttribute="trailing" id="dgh-uj-fVX"/>
+                                    <constraint firstItem="57m-Hr-eRN" firstAttribute="centerX" secondItem="j81-Sa-dwP" secondAttribute="centerX" constant="-1.5" id="h2c-vQ-ZgI"/>
+                                    <constraint firstItem="X6i-JM-lVC" firstAttribute="centerY" secondItem="j81-Sa-dwP" secondAttribute="centerY" id="jb7-sy-MqY"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="6kA-v9-Y25" secondAttribute="trailingMargin" id="mgA-OD-DvY"/>
+                                    <constraint firstItem="57m-Hr-eRN" firstAttribute="leading" secondItem="6kA-v9-Y25" secondAttribute="leading" constant="-2" id="rXD-nB-arj"/>
+                                    <constraint firstItem="X6i-JM-lVC" firstAttribute="top" secondItem="j81-Sa-dwP" secondAttribute="top" constant="62" id="sug-xw-hG7"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A1r-VG-0Ps" userLabel="Language Selector Button">
+                                <rect key="frame" x="133" y="35" width="109" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="Select Language"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="j81-Sa-dwP" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="500" id="2hV-8b-whI"/>
+                            <constraint firstItem="j81-Sa-dwP" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Nb3-un-NvG"/>
+                            <constraint firstItem="j81-Sa-dwP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="tXN-iU-Iyp"/>
+                            <constraint firstAttribute="trailing" secondItem="j81-Sa-dwP" secondAttribute="trailing" id="uew-ds-fbx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="accuracyLabel" destination="6kA-v9-Y25" id="UTO-Jd-vF8"/>
+                        <outlet property="belowView" destination="j81-Sa-dwP" id="Hjh-be-9ax"/>
+                        <outlet property="languagePicker" destination="X6i-JM-lVC" id="Jrs-s3-7Ws"/>
+                        <outlet property="languageSelectorButton" destination="A1r-VG-0Ps" id="wef-mF-sbb"/>
+                        <outlet property="objectNameLabel" destination="57m-Hr-eRN" id="e0K-RF-HWg"/>
+                        <outlet property="translatedText" destination="KL9-Rf-m0k" id="lT9-cN-mZ3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
